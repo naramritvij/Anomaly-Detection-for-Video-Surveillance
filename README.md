@@ -1,6 +1,6 @@
 #  Anomaly Detection for Video Surveillance
 
-A Python-based desktop application that uses a trained Convolutional Neural Network (CNN) to detect anomalous or abnormal events (such as accidents or falls) in surveillance video footage — displayed through a full-featured GUI with user authentication.
+A Python-based desktop application that uses a trained Convolutional Neural Network (CNN) to detect anomalous or abnormal events (such as accidents or falls) in surveillance video footage, displayed through a full-featured GUI with user authentication.
 
 ---
 
