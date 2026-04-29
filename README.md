@@ -1,10 +1,10 @@
-# 🎥 Anomaly Detection for Video Surveillance
+#  Anomaly Detection for Video Surveillance
 
 A Python-based desktop application that uses a trained Convolutional Neural Network (CNN) to detect anomalous or abnormal events (such as accidents or falls) in surveillance video footage — displayed through a full-featured GUI with user authentication.
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -23,30 +23,30 @@ A Python-based desktop application that uses a trained Convolutional Neural Netw
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project is a **real-time video anomaly detection system** built as a desktop GUI application using Python. It processes `.mp4` video files frame by frame, passes each frame through a pre-trained deep learning model (`abnormalevent.h5`), and classifies each frame as either:
 
-- ✅ **No event detected** (normal activity)
-- 🚨 **Accident event Detected** (anomaly/abnormal activity)
+-  **No event detected** (normal activity)
+-  **Accident event Detected** (anomaly/abnormal activity)
 
 The system is secured with a user **registration and login system** backed by an SQLite database, making it suitable for controlled access environments.
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔐 **User Authentication** — Register and login before accessing the detection system
-- 🖥️ **Tkinter GUI** — Full-screen desktop interface with background images and styled buttons
-- 📹 **Video Upload** — Browse and select `.mp4` video files for analysis
-- 🤖 **CNN-Based Detection** — Frame-by-frame classification using a Keras `.h5` model
-- 🏷️ **Real-Time Annotation** — Each frame is annotated with frame number and detection label
-- 🗃️ **SQLite Database** — Persistent user data storage with no external database required
-- 🔒 **Password Validation** — Enforces strong passwords (uppercase, number, special character)
+-  **User Authentication** — Register and login before accessing the detection system
+-  **Tkinter GUI** — Full-screen desktop interface with background images and styled buttons
+-  **Video Upload** — Browse and select `.mp4` video files for analysis
+-  **CNN-Based Detection** — Frame-by-frame classification using a Keras `.h5` model
+-  **Real-Time Annotation** — Each frame is annotated with frame number and detection label
+-  **SQLite Database** — Persistent user data storage with no external database required
+-  **Password Validation** — Enforces strong passwords (uppercase, number, special character)
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Anomaly-Detection-for-Video-Surveillance-main/
@@ -68,7 +68,7 @@ Anomaly-Detection-for-Video-Surveillance-main/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Component         | Technology                        |
 |-------------------|-----------------------------------|
@@ -81,7 +81,7 @@ Anomaly-Detection-for-Video-Surveillance-main/
 
 ---
 
-## ✅ Prerequisites
+##  Prerequisites
 
 Make sure you have **Python 3.8** or higher installed. The following packages are required:
 
@@ -96,7 +96,7 @@ sqlite3 (built-in)
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 **1. Clone the repository**
 
@@ -143,7 +143,7 @@ FALLModel = load_model('abnormalevent.h5')
 
 ---
 
-## ▶️ Running the Application
+##  Running the Application
 
 Start the application from the project root:
 
@@ -168,7 +168,7 @@ anomalyGUI_main.py
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 ### Frame-by-Frame Inference Pipeline
 
@@ -207,7 +207,7 @@ Press **ESC** at any time to stop playback.
 
 ---
 
-## 🧠 Model Details
+##  Model Details
 
 | Property         | Value                          |
 |------------------|-------------------------------|
@@ -226,7 +226,7 @@ Classification threshold is set at `0.5` on `predicted[0][0]`.
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 The app creates a local SQLite database file `evaluation.db` automatically on first run.
 
@@ -243,7 +243,7 @@ The app creates a local SQLite database file `evaluation.db` automatically on fi
 | `age`      | TEXT | User age (1–100)                   |
 | `password` | TEXT | Password (stored as plain text)    |
 
-> ⚠️ **Security Note:** Passwords are currently stored as **plain text** in the database. For any real-world deployment, passwords must be hashed using a library like `bcrypt` or `hashlib`.
+>  **Security Note:** Passwords are currently stored as **plain text** in the database. For any real-world deployment, passwords must be hashed using a library like `bcrypt` or `hashlib`.
 
 ### Password Requirements
 
@@ -256,7 +256,7 @@ The registration form enforces:
 
 ---
 
-## 📄 File Descriptions
+##  File Descriptions
 
 | File | Purpose |
 |------|---------|
@@ -269,7 +269,7 @@ The registration form enforces:
 
 ---
 
-## ⚠️ Known Issues & Limitations
+##  Known Issues & Limitations
 
 - **Hardcoded model path** — `GUI_Master.py` uses an absolute Windows path (`C:/Anomaly Detection 2/...`) for loading the model. This must be updated before running on any other machine.
 - **Missing background images** — `new5.jpg`, `back5.jpg`, and `new3.jpg` are referenced but not included in the repository. The app will crash on launch without them.
@@ -281,7 +281,7 @@ The registration form enforces:
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Add password hashing (e.g., `bcrypt`) for secure credential storage
 - [ ] Fix cross-platform path handling using `os.path.join()`
@@ -295,7 +295,7 @@ The registration form enforces:
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **GNU General Public License v3.0**.  
 See the [LICENSE](LICENSE) file for full details.
