@@ -19,6 +19,7 @@ A Python-based desktop application that uses a trained Convolutional Neural Netw
 - [File Descriptions](#file-descriptions)
 - [Known Issues & Limitations](#known-issues--limitations)
 - [Future Improvements](#future-improvements)
+- [Research Paper](#research-paper)
 - [License](#license)
 
 ---
@@ -292,6 +293,11 @@ The registration form enforces:
 - [ ] Add email alerts when an anomaly is detected
 - [ ] Package as a standalone executable using `PyInstaller`
 - [ ] Add a model training interface so users can retrain on custom datasets
+
+---
+
+## Research Paper
+[ View Research Paper](Anomaly_Detection_Paper.pdf)
 
 ---
 
